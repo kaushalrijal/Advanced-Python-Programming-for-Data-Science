@@ -1,0 +1,231 @@
+<!-- Create a webpage using HTML only that demonstrates the use of
+different types of lists. Display an unordered list showing at least
+five favorite subjects or skills and an ordered list showing three
+daily activities or steps of a process. Also include a description list
+(<dl>) with at least two terms and their corresponding descriptions.
+Demonstrate list nesting by placing one list inside another and as a
+mini challenge, change the list style using the type attribute and
+create a mixed list where an unordered list is placed inside an
+ordered list. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+<body>
+    <h1>HTML Lists Demonstration</h1>
+
+    <!-- Unordered List: Favorite Subjects -->
+    <section>
+        <h2>Favorite Subjects/Skills</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Artificial Intelligence</li>
+            <li>Database Management</li>
+            <li>Computer Networks</li>
+        </ul>
+    </section>
+
+    <!-- Ordered List: Daily Activities -->
+    <section>
+        <h2>Daily Routine</h2>
+        <ol>
+            <li>Eat</li>
+            <li>Sleep</li>
+            <li>Repeat</li>
+        </ol>
+    </section>
+
+    <!-- Description List -->
+    <section>
+        <h2>Programming Terms</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language - the standard markup language for creating web pages and web applications.</dd>
+            
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets - a style sheet language used for making the webpage look beautiful.</dd>
+            
+            <dt>JavaScript</dt>
+            <dd>A high-level, interpreted programming language that enables interactive web pages.</dd>
+        </dl>
+    </section>
+
+    <!-- Nested Lists -->
+    <section>
+        <h2>Course Structure (Nested Lists)</h2>
+        <ul>
+            <li>Computer Science
+                <ul>
+                    <li>Programming Languages
+                        <ol>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                        </ol>
+                    </li>
+                    <li>Theory Subjects
+                        <ol>
+                            <li>Algorithms</li>
+                            <li>Operating Systems</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li>Mathematics
+                <ul>
+                    <li>Calculus</li>
+                    <li>Linear Algebra</li>
+                    <li>Discrete Mathematics</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Lists with Different Type Attributes -->
+    <section>
+        <h2>Lists with Type Attributes</h2>
+        
+        <h3>Ordered List - Roman Numerals (Uppercase)</h3>
+        <ol type="I">
+            <li>First Step</li>
+            <li>Second Step</li>
+            <li>Third Step</li>
+        </ol>
+
+        <h3>Ordered List - Roman Numerals (Lowercase)</h3>
+        <ol type="i">
+            <li>Introduction</li>
+            <li>Main Content</li>
+            <li>Conclusion</li>
+        </ol>
+
+        <h3>Ordered List - Alphabetical (Uppercase)</h3>
+        <ol type="A">
+            <li>Phase A</li>
+            <li>Phase B</li>
+            <li>Phase C</li>
+        </ol>
+
+        <h3>Ordered List - Alphabetical (Lowercase)</h3>
+        <ol type="a">
+            <li>Option a</li>
+            <li>Option b</li>
+            <li>Option c</li>
+        </ol>
+
+        <h3>Unordered List - Circle</h3>
+        <ul type="circle">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+        </ul>
+
+        <h3>Unordered List - Square</h3>
+        <ul type="square">
+            <li>Task A</li>
+            <li>Task B</li>
+            <li>Task C</li>
+        </ul>
+    </section>
+
+    <!-- Mixed List: Unordered inside Ordered -->
+    <section>
+        <h2>Project Development Steps (Mixed List)</h2>
+        <ol>
+            <li>Planning Phase
+                <ul>
+                    <li>Define project goals</li>
+                    <li>Identify stakeholders</li>
+                    <li>Create timeline</li>
+                    <li>Allocate resources</li>
+                </ul>
+            </li>
+            <li>Design Phase
+                <ul>
+                    <li>Create wireframes</li>
+                    <li>Design database schema</li>
+                    <li>Develop UI/UX mockups</li>
+                </ul>
+            </li>
+            <li>Development Phase
+                <ul>
+                    <li>Set up development environment</li>
+                    <li>Write code</li>
+                    <li>Perform unit testing</li>
+                    <li>Code review</li>
+                </ul>
+            </li>
+            <li>Testing Phase
+                <ul>
+                    <li>Integration testing</li>
+                    <li>User acceptance testing</li>
+                    <li>Bug fixing</li>
+                </ul>
+            </li>
+            <li>Deployment Phase
+                <ul>
+                    <li>Deploy to production</li>
+                    <li>Monitor performance</li>
+                    <li>Gather user feedback</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Complex Nested Mixed List -->
+    <section>
+        <h2>Web Development Roadmap (Complex Nested List)</h2>
+        <ol type="1">
+            <li>Frontend Development
+                <ul type="disc">
+                    <li>HTML Basics
+                        <ol type="a">
+                            <li>Elements and Tags</li>
+                            <li>Semantic HTML</li>
+                            <li>Forms and Tables</li>
+                        </ol>
+                    </li>
+                    <li>CSS Styling
+                        <ol type="a">
+                            <li>Selectors</li>
+                            <li>Box Model</li>
+                            <li>Flexbox and Grid</li>
+                        </ol>
+                    </li>
+                    <li>JavaScript
+                        <ol type="a">
+                            <li>Variables and Data Types</li>
+                            <li>Functions</li>
+                            <li>DOM Manipulation</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li>Backend Development
+                <ul type="disc">
+                    <li>Server-side Languages
+                        <ul type="square">
+                            <li>Node.js</li>
+                            <li>Python (Django/Flask)</li>
+                            <li>PHP</li>
+                        </ul>
+                    </li>
+                    <li>Databases
+                        <ul type="square">
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+    
+</body>
+</html>
